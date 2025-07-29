@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <div class="w-full min-h-[500px] md:w-[80%] rounded-[5%] shadow-[0_0_10px_1px_rgba(0,0,0,0.4)] overflow-hidden">
+  <div class="w-full min-h-[500px] md:w-[80%] rounded-3xl shadow-[0_0_10px_1px_rgba(0,0,0,0.4)] overflow-hidden">
     <div class="w-full h-1/3 relative">
       <img :src="img" alt="cover photo" class="w-full h-full"></img>
       <div class="absolute left-[6%] bottom-[-30%] size-[80px] rounded-full bg-white p-1">
