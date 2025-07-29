@@ -1,11 +1,15 @@
 <script setup>
-
+  import Navbar from "@/components/Navbar.vue";
+  import Main from "./components/Main.vue";
+  import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-  <h1 class="text-3xl font-bold underline text-red-500">Hello world!</h1>
+  <div class="h-screen flex flex-col">
+    <Navbar class="h-[10%]" />
+    <Main class="h-[85%]" />
+    <Footer class="h-[5%]" />
+  </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
