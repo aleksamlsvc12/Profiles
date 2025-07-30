@@ -1,0 +1,13 @@
+{
+  "p1": {
+    "name": "John Travis",
+    "status": "following",
+    "email": "@john-travis",
+    "followers": 1321,
+    "following": 172,
+    "posts": 15,
+    "hourlyRate": "241$",
+    "about": "bla bla",
+    "location": "Belgrade, Serbia"
+  }
+}

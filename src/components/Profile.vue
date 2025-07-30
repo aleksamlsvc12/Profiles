@@ -1,6 +1,7 @@
 <script setup>
   import img from '@/assets/img/img.jpg';
   import profile from '@/assets/img/profile.jpg';
+  import profiles from '@/assets/data/profiles.json';
 </script>
 
 <template>
@@ -14,41 +15,41 @@
 
     <div class="mt-[20%] pl-[8%] pr-[8%] pb-[5%] flex flex-col">
       <div class="flex items-center">
-        <span class="font-bold mr-[3%]">John Travis</span>
+        <span class="font-bold mr-[3%]">{{ profiles.p1.name }}</span>
         <div class="text-[10px] border border-gray-300 flex items-center p-[1px] pr-2 pl-2 gap-1 rounded-md">
            <span class="pi pi-circle-fill text-green-600"></span>
-          <span class="text-green-600">following</span>
+          <span class="text-green-600">{{ profiles.p1.status }}</span>
         </div>
       </div>
 
-      <span class="gray text-xs mb-[5%] cursor-pointer">@john-travis</span>
+      <span class="gray text-xs mb-[5%] cursor-pointer">{{ profiles.p1.email }}</span>
 
       <div class="text-xs grid grid-cols-4 mb-[5%]">
         <div class="flex flex-col">
           <span class="gray">Followers</span>
-          <span>1232</span>
+          <span>{{ profiles.p1.followers }}</span>
         </div>
 
         <div class="flex flex-col">
           <span  class="gray">Following</span>
-          <span>142</span>
+          <span>{{ profiles.p1.following }}</span>
         </div>
 
         <div class="flex flex-col">
           <span class="gray">Posts</span>
-          <span>113</span>
+          <span>{{ profiles.p1.posts }}</span>
         </div>
 
         <div class="flex flex-col">
           <span class="gray">Hourly Rate</span>
-          <span>231$</span>
+          <span>{{ profiles.p1.hourlyRate }}</span>
         </div>
       </div>
 
       <hr class="gray border-dotted mb-[5%]">
 
       <p class="font-bold text-sm">About</p>
-      <p class="text-[10px] text-justify gray mb-[10%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quasi quod iste laborum magni maiores? Dignissimos laborum, dolore excepturi alias vitae natus repellendus modi eius ut, ab, sunt sequi voluptatibus!</p>
+      <p class="text-[10px] text-justify gray mb-[10%]">{{ profiles.p1.about }}</p>
 
       <div class="flex justify-between items-center">
         <div class="flex gap-3">
@@ -59,7 +60,7 @@
 
         <div class="flex items-center gray gap-1">
           <span class="pi pi-map-marker text-xs"></span>
-          <span class="text-[10px] underline cursor-pointer">New York, United States</span>
+          <span class="text-[10px] underline cursor-pointer">{{ profiles.p1.location }}</span>
         </div>
       </div>
     </div>
