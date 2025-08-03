@@ -1,5 +1,6 @@
-{
-  "p1": {
+[
+  {
+    "id": 1,
     "name": "John Travis",
     "status": "following",
     "email": "@john-travis",
@@ -9,5 +10,113 @@
     "hourlyRate": "241$",
     "about": "bla bla",
     "location": "Belgrade, Serbia"
+  },
+  {
+    "id": 2,
+    "name": "Sara Klein",
+    "status": "not-following",
+    "email": "@sara-klein",
+    "followers": 987,
+    "following": 56,
+    "posts": 23,
+    "hourlyRate": "120$",
+    "about": "Graphic designer with a love for minimalism and branding. Based in Germany, working globally since 2015.",
+    "location": "Munich, Germany"
+  },
+  {
+    "id": 3,
+    "name": "Leo Nakamura",
+    "status": "following",
+    "email": "@leo-nakamura",
+    "followers": 3210,
+    "following": 412,
+    "posts": 44,
+    "hourlyRate": "300$",
+    "about": "Frontend developer focused on Vue and TypeScript. I build fast, clean web apps and contribute to open source.",
+    "location": "Osaka, Japan"
+  },
+  {
+    "id": 4,
+    "name": "Amina Idris",
+    "status": "following",
+    "email": "@amina-idris",
+    "followers": 765,
+    "following": 198,
+    "posts": 12,
+    "hourlyRate": "95$",
+    "about": "Content writer and editor with 8 years of experience in tech, lifestyle, and travel publications across Africa.",
+    "location": "Lagos, Nigeria"
+  },
+  {
+    "id": 5,
+    "name": "Victor Chen",
+    "status": "not-following",
+    "email": "@victor-chen",
+    "followers": 1890,
+    "following": 312,
+    "posts": 36,
+    "hourlyRate": "180$",
+    "about": "Product manager who loves building SaaS tools. Previously at a YC startup. Big on user research and feedback.",
+    "location": "Vancouver, Canada"
+  },
+  {
+    "id": 6,
+    "name": "Lena Petrovic",
+    "status": "following",
+    "email": "@lena-petrovic",
+    "followers": 1422,
+    "following": 299,
+    "posts": 17,
+    "hourlyRate": "210$",
+    "about": "UX researcher with a background in psychology. I help teams make user-centered decisions based on real data.",
+    "location": "Novi Sad, Serbia"
+  },
+  {
+    "id": 7,
+    "name": "Mason Blake",
+    "status": "not-following",
+    "email": "@mason-blake",
+    "followers": 453,
+    "following": 34,
+    "posts": 9,
+    "hourlyRate": "77$",
+    "about": "Junior developer learning backend tech. Love working with Node.js and Go. Always open to mentorship and code.",
+    "location": "Denver, USA"
+  },
+  {
+    "id": 8,
+    "name": "Chiara Russo",
+    "status": "following",
+    "email": "@chiara-russo",
+    "followers": 2300,
+    "following": 401,
+    "posts": 28,
+    "hourlyRate": "155$",
+    "about": "Freelance photographer and visual storyteller. I capture authentic moments for brands, people, and events.",
+    "location": "Milan, Italy"
+  },
+  {
+    "id": 9,
+    "name": "Tomás Rivera",
+    "status": "following",
+    "email": "@tomas-rivera",
+    "followers": 1102,
+    "following": 277,
+    "posts": 21,
+    "hourlyRate": "132$",
+    "about": "Data analyst skilled in Python, SQL, and Tableau. Passionate about clean dashboards and actionable insight.",
+    "location": "Bogotá, Colombia"
+  },
+  {
+    "id": 10,
+    "name": "Elena Georgiou",
+    "status": "not-following",
+    "email": "@elena-georgiou",
+    "followers": 688,
+    "following": 198,
+    "posts": 11,
+    "hourlyRate": "105$",
+    "about": "Translator fluent in Greek, English, and French. I specialize in medical and legal content with fast delivery.",
+    "location": "Nicosia, Cyprus"
   }
-}
+]
