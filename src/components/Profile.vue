@@ -1,7 +1,7 @@
 <script setup>
   import img from '@/assets/img/img.jpg';
   import profile from '@/assets/img/profile.jpg';
-  
+
   const props = defineProps({
     name: String,
     status: String,
@@ -69,9 +69,8 @@
 
       <div class="flex justify-between items-center">
         <div class="flex gap-3">
-          <span class="pi pi-github text-sm"></span>
+          <span class="pi pi-github text-sm" ></span>
           <span class="pi pi-linkedin text-sm"></span>
-          <span class="pi pi-twitter text-sm"></span>
         </div>
 
         <div class="flex items-center gray gap-1">
