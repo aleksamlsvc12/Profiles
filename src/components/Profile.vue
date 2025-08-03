@@ -1,6 +1,6 @@
 <script setup>
   import img from '@/assets/img/img.jpg';
-  import profile from '@/assets/img/profile.jpg';
+  import profile from '@/assets/img/p0.jpg';
 
   const props = defineProps({
     name: String,
@@ -11,7 +11,8 @@
     posts: Number,
     hourlyRate: Number,
     about: String,
-    location: String
+    location: String,
+    image: String
   });
 </script>
 
@@ -20,7 +21,7 @@
     <div class="w-full h-1/3 relative">
       <img :src="img" alt="cover photo" class="w-full h-full"></img>
       <div class="absolute left-[6%] bottom-[-30%] size-[80px] rounded-full bg-white p-1">
-        <img :src="profile" alt="profile picture" class="w-full h-full rounded-full">
+        <img :src="image" alt="profile picture" class="w-full h-full rounded-full">
       </div>
     </div>
 
