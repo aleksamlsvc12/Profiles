@@ -1,7 +1,18 @@
 <script setup>
   import img from '@/assets/img/img.jpg';
   import profile from '@/assets/img/profile.jpg';
-  import profiles from '@/assets/data/profiles.json';
+  
+  const props = defineProps({
+    name: String,
+    status: String,
+    email: String,
+    followers: Number,
+    following: Number,
+    posts: Number,
+    hourlyRate: Number,
+    about: String,
+    location: String
+  });
 </script>
 
 <template>
@@ -15,41 +26,46 @@
 
     <div class="mt-[20%] pl-[8%] pr-[8%] pb-[5%] flex flex-col">
       <div class="flex items-center">
-        <span class="font-bold mr-[3%]">{{ profiles.p1.name }}</span>
-        <div class="text-[10px] border border-gray-300 flex items-center p-[1px] pr-2 pl-2 gap-1 rounded-md">
-           <span class="pi pi-circle-fill text-green-600"></span>
-          <span class="text-green-600">{{ profiles.p1.status }}</span>
+        <span class="font-bold mr-[3%]">{{ name }}</span>
+        <div v-if="status === 'following'" class="text-[10px] border border-gray-300 flex items-center p-[1px] pr-2 pl-2 gap-1 rounded-md">
+          <span class="pi pi-circle-fill text-green-600"></span>
+          <span class="text-green-600">{{ status }}</span>
+        </div>
+
+        <div v-else class="text-[10px] border border-gray-300 flex items-center p-[1px] pr-2 pl-2 gap-1 rounded-md">
+          <span class="pi pi-circle-fill text-red-600"></span>
+          <span class="text-red-600">{{ status }}</span>
         </div>
       </div>
 
-      <span class="gray text-xs mb-[5%] cursor-pointer">{{ profiles.p1.email }}</span>
+      <span class="gray text-xs mb-[5%] cursor-pointer">{{ email }}</span>
 
       <div class="text-xs grid grid-cols-4 mb-[5%]">
         <div class="flex flex-col">
           <span class="gray">Followers</span>
-          <span>{{ profiles.p1.followers }}</span>
+          <span>{{ followers }}</span>
         </div>
 
         <div class="flex flex-col">
           <span  class="gray">Following</span>
-          <span>{{ profiles.p1.following }}</span>
+          <span>{{ following }}</span>
         </div>
 
         <div class="flex flex-col">
           <span class="gray">Posts</span>
-          <span>{{ profiles.p1.posts }}</span>
+          <span>{{ posts }}</span>
         </div>
 
         <div class="flex flex-col">
           <span class="gray">Hourly Rate</span>
-          <span>{{ profiles.p1.hourlyRate }}</span>
+          <span>{{ hourlyRate }}&dollar;</span>
         </div>
       </div>
 
       <hr class="gray border-dotted mb-[5%]">
 
       <p class="font-bold text-sm">About</p>
-      <p class="text-[10px] text-justify gray mb-[10%]">{{ profiles.p1.about }}</p>
+      <p class="text-[10px] text-justify gray mb-[10%]">{{ about }}</p>
 
       <div class="flex justify-between items-center">
         <div class="flex gap-3">
@@ -60,7 +76,7 @@
 
         <div class="flex items-center gray gap-1">
           <span class="pi pi-map-marker text-xs"></span>
-          <span class="text-[10px] underline cursor-pointer">{{ profiles.p1.location }}</span>
+          <span class="text-[10px] underline cursor-pointer">{{ location }}</span>
         </div>
       </div>
     </div>
