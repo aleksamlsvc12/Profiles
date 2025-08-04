@@ -16,7 +16,7 @@ const props = defineProps({
 
 <template>
   <div
-    class="w-full min-w-[260px] h-[500px] md:w-[90%] rounded-3xl shadow-[0_0_10px_1px_rgba(0,0,0,0.4)] overflow-hidden"
+    class="max-w-[360px] min-w-[260px] h-[500px] md:w-[90%] rounded-3xl shadow-[0_0_10px_1px_rgba(0,0,0,0.4)] overflow-hidden"
   >
     <div class="w-full h-1/3 relative">
       <img :src="wallpaper" alt="cover photo" class="w-full h-full" />
