@@ -37,7 +37,7 @@
         </div>
       </div>
 
-      <span class="gray text-xs mb-[5%] cursor-pointer">{{ email }}</span>
+      <a href="mailto:aleksamlsvc12@gmail.com" class="gray text-xs mb-[5%] cursor-pointer">{{ email }}</a>
 
       <div class="text-xs grid grid-cols-4 mb-[5%]">
         <div class="flex flex-col">
