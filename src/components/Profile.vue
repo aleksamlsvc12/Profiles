@@ -1,43 +1,61 @@
 <script setup>
-  const props = defineProps({
-    name: String,
-    status: String,
-    email: String,
-    followers: Number,
-    following: Number,
-    posts: Number,
-    hourlyRate: Number,
-    about: String,
-    location: String,
-    profilePic: String,
-    wallpaper: String
-  });
+const props = defineProps({
+  name: String,
+  status: String,
+  email: String,
+  followers: Number,
+  following: Number,
+  posts: Number,
+  hourlyRate: Number,
+  about: String,
+  location: String,
+  profilePic: String,
+  wallpaper: String,
+});
 </script>
 
 <template>
-  <div class="w-full min-w-[260px] h-[500px] md:w-[90%] rounded-3xl shadow-[0_0_10px_1px_rgba(0,0,0,0.4)] overflow-hidden">
+  <div
+    class="w-full min-w-[260px] h-[500px] md:w-[90%] rounded-3xl shadow-[0_0_10px_1px_rgba(0,0,0,0.4)] overflow-hidden"
+  >
     <div class="w-full h-1/3 relative">
-      <img :src="wallpaper" alt="cover photo" class="w-full h-full"></img>
-      <div class="absolute left-[6%] bottom-[-30%] size-[80px] rounded-full bg-white p-1">
-        <img :src="profilePic" alt="profile picture" class="w-full h-full rounded-full">
+      <img :src="wallpaper" alt="cover photo" class="w-full h-full" />
+      <div
+        class="absolute left-[6%] bottom-[-30%] size-[80px] rounded-full bg-white p-1"
+      >
+        <img
+          :src="profilePic"
+          alt="profile picture"
+          class="w-full h-full rounded-full"
+        />
       </div>
     </div>
 
     <div class="mt-[20%] pl-[8%] pr-[8%] pb-[5%] flex flex-col">
       <div class="flex items-center">
         <span class="font-bold mr-[3%]">{{ name }}</span>
-        <div v-if="status === 'following'" class="text-[10px] border border-gray-300 flex items-center p-[1px] pr-2 pl-2 gap-1 rounded-md">
+        <div
+          v-if="status === 'following'"
+          class="text-[10px] border border-gray-300 flex items-center p-[1px] pr-2 pl-2 gap-1 rounded-md"
+        >
           <span class="pi pi-circle-fill text-green-600"></span>
           <span class="text-green-600">{{ status }}</span>
         </div>
 
-        <div v-else class="text-[10px] border border-gray-300 flex items-center p-[1px] pr-2 pl-2 gap-1 rounded-md">
+        <div
+          v-else
+          class="text-[10px] border border-gray-300 flex items-center p-[1px] pr-2 pl-2 gap-1 rounded-md"
+        >
           <span class="pi pi-circle-fill text-red-600"></span>
           <span class="text-red-600">{{ status }}</span>
         </div>
       </div>
 
-      <a href="mailto:aleksamlsvc12@gmail.com" class="gray text-xs mb-[5%] cursor-pointer">{{ email }}</a>
+      <a
+        href="mailto:aleksamlsvc12@gmail.com"
+        class="gray text-xs mb-[5%] cursor-pointer"
+        >{{ email }}</a
+      >
 
       <div class="text-xs grid grid-cols-4 mb-[5%]">
         <div class="flex flex-col">
@@ -46,7 +64,7 @@
         </div>
 
         <div class="flex flex-col">
-          <span  class="gray">Following</span>
+          <span class="gray">Following</span>
           <span>{{ following }}</span>
         </div>
 
@@ -61,20 +79,28 @@
         </div>
       </div>
 
-      <hr class="gray border-dotted mb-[5%]">
+      <hr class="gray border-dotted mb-[5%]" />
 
       <p class="font-bold text-sm">About</p>
       <p class="text-[10px] text-justify gray mb-[10%]">{{ about }}</p>
 
       <div class="flex justify-between items-center">
         <div class="flex gap-3">
-          <a href="https://github.com/aleksamlsvc12" class="pi pi-github text-sm" ></a>
-          <a href="https://linkedin.com/in/aleksamlsvc12" class="pi pi-linkedin text-sm"></a>
+          <a
+            href="https://github.com/aleksamlsvc12"
+            class="pi pi-github text-sm"
+          ></a>
+          <a
+            href="https://linkedin.com/in/aleksamlsvc12"
+            class="pi pi-linkedin text-sm"
+          ></a>
         </div>
 
         <div class="flex items-center gray gap-1">
           <span class="pi pi-map-marker text-xs"></span>
-          <span class="text-[10px] underline cursor-pointer">{{ location }}</span>
+          <span class="text-[10px] underline">{{
+            location
+          }}</span>
         </div>
       </div>
     </div>
@@ -82,15 +108,15 @@
 </template>
 
 <style>
-  .gray{
-    color: rgb(170, 170, 170);
-  }
+.gray {
+  color: rgb(170, 170, 170);
+}
 
-  .pi{
-    cursor: pointer;
-  }
+.pi {
+  cursor: pointer;
+}
 
-  .pi-circle-fill{
-    cursor: default;
-  }
+.pi-circle-fill, .pi-map-marker {
+  cursor: default;
+}
 </style>
