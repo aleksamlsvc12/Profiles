@@ -68,8 +68,8 @@
 
       <div class="flex justify-between items-center">
         <div class="flex gap-3">
-          <span class="pi pi-github text-sm" ></span>
-          <span class="pi pi-linkedin text-sm"></span>
+          <a href="https://github.com/aleksamlsvc12" class="pi pi-github text-sm" ></a>
+          <a href="https://linkedin.com/in/aleksamlsvc12" class="pi pi-linkedin text-sm"></a>
         </div>
 
         <div class="flex items-center gray gap-1">
