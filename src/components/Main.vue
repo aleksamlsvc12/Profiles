@@ -31,7 +31,7 @@ const wallpapers = [wp0, wp1, wp2, wp3, wp4, wp5, wp6, wp7, wp8, wp9];
 
 <template>
   <div
-    class="p-[5%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 justify-items-center gap-10 xl:gap-x-30 h-full overflow-y-auto"
+    class="p-[5%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-10 xl:gap-x-30 h-full overflow-y-auto"
   >
     <div v-for="profile in profiles" :key="profile.id">
       <Profile

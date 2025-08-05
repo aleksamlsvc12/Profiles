@@ -16,10 +16,11 @@ const props = defineProps({
 
 <template>
   <div
-    class="max-w-[360px] min-w-[260px] h-[500px] md:w-[90%] rounded-3xl shadow-[0_0_10px_1px_rgba(0,0,0,0.4)] overflow-hidden"
+    class="max-w-[350px] min-w-[310px] md:w-[90%] rounded-3xl shadow-[0_0_10px_1px_rgba(0,0,0,0.4)] overflow-hidden"
   >
-    <div class="w-full h-1/3 relative">
+    <div class="w-full h-[160px] relative">
       <img :src="wallpaper" alt="cover photo" class="w-full h-full" />
+      
       <div
         class="absolute left-[6%] bottom-[-30%] size-[80px] rounded-full bg-white p-1"
       >
@@ -31,7 +32,7 @@ const props = defineProps({
       </div>
     </div>
 
-    <div class="mt-[20%] pl-[8%] pr-[8%] pb-[5%] flex flex-col">
+    <div class="mt-[10%] p-[8%] flex flex-col">
       <div class="flex items-center">
         <span class="font-bold mr-[3%]">{{ name }}</span>
         <div
