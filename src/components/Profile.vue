@@ -20,7 +20,7 @@ const props = defineProps({
   >
     <div class="w-full h-[160px] relative">
       <img :src="wallpaper" alt="cover photo" class="w-full h-full" />
-      
+
       <div
         class="absolute left-[6%] bottom-[-30%] size-[80px] rounded-full bg-white p-1"
       >
@@ -98,10 +98,10 @@ const props = defineProps({
         </div>
 
         <div class="flex items-center gray gap-1">
-          <span class="pi pi-map-marker text-xs"></span>
-          <span class="text-[10px] underline">{{
-            location
-          }}</span>
+          <a href="https://www.google.com/maps/place/Belgrade" class="flex items-center">
+            <span class="pi pi-map-marker text-xs mr-1"></span>
+            <span class="text-[10px] underline">{{ location }}</span>
+          </a>
         </div>
       </div>
     </div>
@@ -117,7 +117,7 @@ const props = defineProps({
   cursor: pointer;
 }
 
-.pi-circle-fill, .pi-map-marker {
+.pi-circle-fill {
   cursor: default;
 }
 </style>

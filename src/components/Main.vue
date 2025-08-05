@@ -50,3 +50,9 @@ const wallpapers = [wp0, wp1, wp2, wp3, wp4, wp5, wp6, wp7, wp8, wp9];
     </div>
   </div>
 </template>
+
+<style>
+  body{
+    user-select: none;
+  }
+</style>
