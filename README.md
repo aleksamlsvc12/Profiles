@@ -4,4 +4,14 @@ Profiles is a web app that lets you browse and explore profiles of different peo
 
 ## Install procedure
 
-Go to Profiles root folder and run npm ci
+Go to Profiles root folder and run: 
+```
+npm ci
+```
+
+## Application
+
+To start the application just run:
+```
+npm run dev
+```
